@@ -8,9 +8,9 @@ from app.main import get_human_age
 @pytest.mark.parametrize(
     "cat_age, dog_age, expected_exception",
     [
-        ("12", 0, TypeError),
-        (17, "ktc", TypeError),
-        ("dkf", "zkd", TypeError),
+        ("12", 0, ValueError),
+        (17, "ktc", ValueError),
+        ("dkf", "zkd", ValueError),
         (-1, 23, ValueError),
         (24, 200, ValueError),
         (-15, 202, ValueError),

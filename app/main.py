@@ -17,7 +17,7 @@ def get_human_age(cat_age: int, dog_age: int) -> list:
     # TODO: Implement this function
     # Write your tests first, then implement the logic
 
-    if type(cat_age) != int or type(dog_age) != int:
+    if type(cat_age) is not int or type(dog_age) is not int:
         raise TypeError
 
     if cat_age < 0 or dog_age < 0 or cat_age >= 200 or dog_age >= 200:
